@@ -26,14 +26,14 @@ class Random {
                     name: 'min',
                     type: 'number',
                     default: 1,
-                    description: 'Número mínimo (inclusivo)',
+                    description: 'Número mínimo',
                 },
                 {
                     displayName: 'Max',
                     name: 'max',
                     type: 'number',
                     default: 100,
-                    description: 'Número máximo (inclusivo)',
+                    description: 'Número máximo',
                 },
             ],
         };
