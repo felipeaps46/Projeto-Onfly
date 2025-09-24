@@ -22,8 +22,8 @@ A configuração a seguir permite executar o n8n localmente usando Docker Compos
 
 ### 1. Clonar o Repositório
 ```bash
-git clone <url-do-repositorio>
-cd <nome-do-projeto>
+git clone https://github.com/felipeaps46/Projeto-Onfly.git
+cd .\Projeto-Onfly\
 ```
 
 ### 2. Configurar Variáveis de Ambiente
@@ -183,4 +183,4 @@ PROJETO-ONFLY/
 
 ## 🔄 Workflow: Random → PostgreSQL
 
-Para criar um workflow que salva dados na tabela `random_data` veja `WORKFLOW.md`
+Para criar um workflow que salva dados na tabela `random_data`, consulte `WORKFLOW.md`
