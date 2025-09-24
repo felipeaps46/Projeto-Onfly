@@ -96,7 +96,7 @@ docker compose down
 Se tudo tiver sido configurado corretamente, você já poderá seguir para a **construção do workflow**. (veja `WORKFLOW.md`)  
 Caso os nodes customizados ainda não estejam disponíveis, verifique a instalação e compilação do projeto para garantir que eles sejam carregados no n8n.
 
-## Outras Informações Relevantes
+## 📋 Outras Informações Relevantes
 
 ### Banco de Dados PostgreSQL
 
