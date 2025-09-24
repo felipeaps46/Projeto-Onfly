@@ -65,6 +65,7 @@ http://localhost:5678
   - `min`: `{{ $json.min }}`
   - `max`: `{{ $json.max }}`
   - `randomNumber`: `{{ $json.randomNumber }}`
+  - **Mantenha apenas esses 3 valores**
 
 **Entrada esperada**:
 ```json
