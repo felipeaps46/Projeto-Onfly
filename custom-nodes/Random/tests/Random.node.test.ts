@@ -1,5 +1,6 @@
 import { Random } from "../src/Random.node"
 import { NodeOperationError } from 'n8n-workflow';
+import { describe, expect, test } from '@jest/globals';
 
 const mockThis: any = {
     getInputData: () => [{ json: {} }],
