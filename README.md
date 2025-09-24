@@ -1,4 +1,4 @@
-# n8n com PostgreSQL Local
+# Custom Node n8n
 
 Este projeto inclui um node customizado que gera números aleatórios usando a API do [Random.org](https://www.random.org/).
 
@@ -6,6 +6,7 @@ Este projeto inclui um node customizado que gera números aleatórios usando a A
 - Gera números inteiros aleatórios
 - Validação de parâmetros (min/max)
 - Tratamento de erros
+- Persistência em Banco de Dados PostgreSQL
 
 #### Parâmetros:
 - **Min**: Número mínimo (padrão: 1)
