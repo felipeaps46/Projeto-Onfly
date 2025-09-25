@@ -59,6 +59,30 @@ Esse comando:
 - Transpila os arquivos `.ts` em `src/` para `.js` dentro de `dist/`
 - Garante que o n8n conseguirá carregar o nó customizado corretamente
 
+#### Possível erro durante a build:
+
+Em alguns sistemas, especialmente no macOS ou Linux, você pode encontrar o seguinte erro ao rodar `npm run build`:
+
+```bash
+sh: /caminho/do/projeto/node_modules/.bin/tsc: Permission denied
+```
+
+Esse erro ocorre porque o **TypeScript Compiler** (`tsc`) não tem permissão de execução.
+
+#### Solução:
+
+Conceda permissão de execução ao arquivo tsc com o comando:
+
+```bash
+chmod +x node_modules/.bin/tsc
+```
+
+Depois disso, execute novamente o build:
+
+```bash
+npm run build
+```
+
 ### 5. Executar o n8n Localmente (Docker)
 
 #### Opção 1: Usando o script npm criado
@@ -90,8 +114,6 @@ docker compose down
 ### 6. Acessar o n8n
 
 - **URL**: http://localhost:5678
-- **Email**: `felipeaps0918@gmail.com`
-- **Senha**: `Onfly_2025`
 
 Se tudo tiver sido configurado corretamente, você já poderá seguir para a **construção do workflow**. (veja `WORKFLOW.md`)  
 Caso os nodes customizados ainda não estejam disponíveis, verifique a instalação e compilação do projeto para garantir que eles sejam carregados no n8n.
