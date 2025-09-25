@@ -11,9 +11,11 @@
 http://localhost:5678
 ```
 
-### 2. Fazer Login
-- **Email**: felipeaps0918@gmail.com
-- **Senha**: Onfly_2025
+### 2. Fazer Login ou Cadastro
+
+Ao acessar `http://localhost:5678`, use suas credenciais para fazer login.
+
+Se for seu primeiro acesso, crie uma conta. Após o login, você será redirecionado para o editor do n8n.
 
 ## 🚀 Criando o Workflow Random → PostgreSQL
 
