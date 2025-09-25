@@ -58,6 +58,10 @@ Se for seu primeiro acesso, crie uma conta. Após o login, você será redirecio
 
 **Parâmetros Básicos:**
 - **Credential**: Selecione "Postgres Neon" (configurada previamente)
+  
+> Se ainda não tiver cadastrado a credencial, consulte a seção abaixo:  
+> [🔑 Caso as credenciais do banco não estejam salvas no n8n](#-caso-as-credenciais-do-banco-não-estejam-salvas-no-n8n)
+
 - **Operation**: Insert
 - **Schema**: public
 - **Table**: random_data
