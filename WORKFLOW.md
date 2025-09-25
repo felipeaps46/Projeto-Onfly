@@ -38,6 +38,7 @@ Se for seu primeiro acesso, crie uma conta. Após o login, você será redirecio
    - **Max**: 100
      
 **Entrada esperada**: Nenhuma (node inicial)
+
 **Saída gerada**:
 ```json
 {
