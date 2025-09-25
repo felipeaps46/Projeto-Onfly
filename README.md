@@ -184,7 +184,7 @@ PROJETO-ONFLY/
 │   │
 │   ├── dist/                       # Saída do código compilado (gerado pelo TypeScript)
 │   │
-│   ├── node_modules/               # Dependências instaladas via NPM (não versionar no Git)
+│   ├── node_modules/               # Dependências instaladas via NPM (não versionado no Git)
 │   │
 │   ├── src/                        # Código-fonte principal do nó
 │   │   ├── Random.node.ts          # Implementação do nó Random em TypeScript
@@ -198,6 +198,7 @@ PROJETO-ONFLY/
 │   └── tsconfig.json               # Configuração do compilador TypeScript
 │
 ├── .dockerignore                   # Arquivos e pastas ignorados pelo Docker
+├── .gitignore                      # Arquivos e pastas ignorados pelo Git
 ├── .env                            # Arquivo de variáveis de ambiente (não deve ir pro Git)
 ├── .env.example                    # Exemplo de configuração de variáveis de ambiente
 ├── docker-compose.yml              # Orquestração de containers com Docker Compose
