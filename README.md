@@ -17,7 +17,7 @@ A configuração a seguir permite executar o n8n localmente usando Docker Compos
 ## 📋 Pré-requisitos
 
 - Docker e Docker Compose instalados
-- Node.js (para desenvolvimento dos nodes customizados)
+- Node.js e TypeScript (para desenvolvimento dos nodes customizados)
 
 ## 🚀 Configuração
 
@@ -59,29 +59,28 @@ Esse comando:
 - Transpila os arquivos `.ts` em `src/` para `.js` dentro de `dist/`
 - Garante que o n8n conseguirá carregar o nó customizado corretamente
 
-#### Possível erro durante a build:
-
-Em alguns sistemas, especialmente no macOS ou Linux, você pode encontrar o seguinte erro ao rodar `npm run build`:
-
-```bash
-sh: /caminho/do/projeto/node_modules/.bin/tsc: Permission denied
-```
-
-Esse erro ocorre porque o **TypeScript Compiler** (`tsc`) não tem permissão de execução.
-
-#### Solução:
-
-Conceda permissão de execução ao arquivo tsc com o comando:
-
-```bash
-chmod +x node_modules/.bin/tsc
-```
-
-Depois disso, execute novamente o build:
-
-```bash
-npm run build
-```
+> #### ⚠️ Possível erro durante a build
+>
+> Em sistemas como macOS ou Linux, você pode se deparar com o seguinte erro ao rodar `npm run build`:
+>
+> ```bash
+> sh: /caminho/do/projeto/node_modules/.bin/tsc: Permission denied
+> ```
+>
+> Isso acontece porque o **TypeScript Compiler** (`tsc`) não tem permissão de execução.
+>
+> **Solução:**  
+> Conceda permissão com o comando:
+>
+> ```bash
+> chmod +x node_modules/.bin/tsc
+> ```
+>
+> Depois, tente rodar o build novamente:
+>
+> ```bash
+> npm run build
+> ```
 
 ### 5. Executar o n8n Localmente (Docker)
 
